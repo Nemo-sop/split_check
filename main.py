@@ -13,7 +13,7 @@ class ExpensesRequest(BaseModel):
 class ExpensesResponse(BaseModel):
     total_spent: float
     individual_spent: float
-    debts: Dict[str, float]
+    #debts: Dict[str, float]
     transfers: List[str]
 
 @app.get("/", response_class=HTMLResponse)
