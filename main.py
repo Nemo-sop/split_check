@@ -40,6 +40,6 @@ def calculate_expenses(request: ExpensesRequest):
     return ExpensesResponse(
         total_spent=divider.total_spent,
         individual_spent=divider.individual_spent,
-        debts=divider.debts,
+        #debts=divider.debts,
         transfers=transfers
     )
